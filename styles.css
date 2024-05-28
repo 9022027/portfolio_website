@@ -1,0 +1,71 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    grid-area: header;
+    background-color: #500202;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #d52222;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    padding: 1em;
+}
+
+article {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
